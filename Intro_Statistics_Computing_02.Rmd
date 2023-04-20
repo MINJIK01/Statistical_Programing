@@ -1,0 +1,29 @@
+---
+title: "Intro_Statistics_Computing_02"
+author: "MinJi Kim"
+date: '2023-03-06'
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Gaussian elimination method
+```{r}
+A = matrix(c(4,2,8,6,-2,3,3,5,-6), ncol = 3)
+b = c(25,13,-4)
+solve(A,b)
+```
+
+
+```{r}
+B = matrix(c(4,5,2,10,-2,5,6,3,-10), ncol = 3)
+det(B)
+
+C = matrix(c(1,-2/5,1/2,0,1,0,0,0,1), ncol = 3)
+det(C)
+```
+
