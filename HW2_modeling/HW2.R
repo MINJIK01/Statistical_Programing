@@ -27,7 +27,7 @@ library(rms)
 library(bestNormalize)
 
 # Set the directory of the data files
-setwd("Type your directory")
+setwd("C:/Users/user/Desktop/2023-1학기/통모머/HW2_modeling")
 getwd()                 # check the path
 
 # Load the data
@@ -44,7 +44,7 @@ train %>% describe
 
 # Check the missing pattern
 train %>% md.pattern    # Result shows that there are more missing rows
-                        # than the others which missed one values solely
+                        # than the others, which missed one values solely
 sum(is.na(train$Y))     # Also, there aren't any missing values for Y
 
 # Check the missing pattern based on Y variables
